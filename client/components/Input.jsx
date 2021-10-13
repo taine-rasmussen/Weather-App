@@ -28,21 +28,16 @@ const Input = ({city, setCity, setAllData, allData}) => {
       e.target.reset()
     }
 
-
 	return(
-
-	<div className='search-container'>
-        <div className='search-header-container'>
-          <h1 className='search-header'>Weather Forcast</h1>
-        </div>
-          <form onSubmit={(e) => {handleSubmit(e)}} className='search-form'>
-            <input type="text" className='search' placeholder='Enter city here...' onChange={(e) => {handleChange(e)}}/>
-            <button className='btn-search' onClick={getWeather}>Search</button>
-          </form>
-
-		  <h1>{allData.timezone}</h1>
-	</div>
-
+		<div className='search-container'>
+			<div className='search-header-container'>
+			<h1 className='search-header'>Weather Forcast</h1>
+			</div>
+			<form onSubmit={(e) => {handleSubmit(e)}} className='search-form'>
+				<input type="text" className='search' placeholder='Enter city here...' onChange={(e) => {handleChange(e)}}/>
+				<button className='btn-search' onClick={getWeather}>Search</button>
+			</form>
+		</div>
 	)
 }
 

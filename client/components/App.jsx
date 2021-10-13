@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 // Components
 import Input from './Input'
+import Display from './Display'
 
 
 function App () {
@@ -13,7 +14,12 @@ function App () {
   return (
     <>
       <div className='app'>
-        <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>
+        <div>
+          <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>  
+        </div>
+        <div>
+          <Display city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>
+        </div>
       </div>
     </>
   )
