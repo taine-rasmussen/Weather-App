@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Display = ({city, setCity, setAllData, allData}) => {
+const Display = ({allData}) => {
 
 	return(
 		<div className="display-container">

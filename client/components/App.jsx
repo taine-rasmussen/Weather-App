@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 // Components
 import Input from './Input'
@@ -10,7 +10,6 @@ function App () {
   const [city, setCity] = useState('') 
   const [allData, setAllData] = useState('allData')
 
-
   return (
     <>
       <div className='app'>
@@ -18,7 +17,7 @@ function App () {
           <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>  
         </div>
         <div>
-          <Display city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>
+          <Display allData={allData}/>
         </div>
       </div>
     </>
