@@ -1,9 +1,12 @@
 import request from 'superagent'
+import KEY from '../config'
 
 export function getData (city) {
   return request
-    .get(`api.openweathermap.org/data/2.5/weather?q=${city}&appid=687bdd4bcdfaae0e53254b01661b9ec2`)
+    .get(`https://api.openweathermap.org/data/2.5/weather?q=wellington&appid=${KEY}`)
     .then(res => res.body)
+
 }
+
 
 
