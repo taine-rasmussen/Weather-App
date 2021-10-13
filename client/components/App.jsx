@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 // Components
 import Input from './Input'
+import Display from './Display'
 
 
 function App () {
@@ -9,11 +10,15 @@ function App () {
   const [city, setCity] = useState('') 
   const [allData, setAllData] = useState('allData')
 
-
   return (
     <>
       <div className='app'>
-        <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>
+        <div>
+          <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>  
+        </div>
+        <div>
+          <Display allData={allData}/>
+        </div>
       </div>
     </>
   )
