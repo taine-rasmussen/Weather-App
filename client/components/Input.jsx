@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 // GET request
 import { getData } from '../api'
 
 const Input = ({city, setCity, setAllData, allData}) => {
 
+	// Gets data for city user entered then updates state with data
 	const getWeather = () => {
 	  getData(city)
 	  .then(res => {
@@ -16,10 +17,6 @@ const Input = ({city, setCity, setAllData, allData}) => {
 		console.error(err.message)
 	  })
 	}
-
-	// useEffect(() => {
-	//   getWeather()
-	// }, []);
 
 	 // Updates input state with text entered into search box
     const handleChange = (e) => {
@@ -42,6 +39,8 @@ const Input = ({city, setCity, setAllData, allData}) => {
             <input type="text" className='search' placeholder='Enter city here...' onChange={(e) => {handleChange(e)}}/>
             <button className='btn-search' onClick={getWeather}>Search</button>
           </form>
+
+		  <h1>{allData.timezone}</h1>
 	</div>
 
 	)
