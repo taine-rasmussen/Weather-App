@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 // GET request
 import { getData } from '../api'
@@ -7,19 +7,24 @@ import { getData } from '../api'
 function App () {
 
   const [city, setCity] = useState('wellington') 
-  const [allData, setAllData] = useState(null)
+  const [allData, setAllData] = useState('allData')
 
-
-    const getWeather = () => {
-      getData(city)
-      .then(res => {
-        setAllData(res)
-        console.log(allData)
-      })
-      .catch((err) => {
-        console.error(err.message)
-      })
-    }
+  
+      
+      const getWeather = () => {
+        getData(city)
+        .then(res => {
+          setAllData(res)
+          console.log(allData)
+        })
+        .catch((err) => {
+          console.error(err.message)
+        })
+      }
+      
+      useEffect(() => {
+        getWeather()
+      }, []);
 
 
   return (
