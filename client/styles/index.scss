@@ -14,6 +14,7 @@ button:focus {
 body {
   margin: 0;
   background-color: var(--light);
+  z-index: 10;
 }
 
 h1 {
@@ -57,11 +58,26 @@ button:hover {
 // Input
 // Display
 .display-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: row;
+  z-index: 10;
 }
 
 .display-left-section {
+  width: 100%;
+  max-width: 200px;
+  z-index: 10;
+  height: 20%;
 }
 
 .display-right-section {
+}
+
+.left-bg-img {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
 }
 // Display
