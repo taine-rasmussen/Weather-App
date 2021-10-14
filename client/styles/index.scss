@@ -1,0 +1,15 @@
+:root {
+  --light: #2a3441;
+  --dark: #14191f;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light);
+}
+
+// Display
+.input-container {
+  background-color: var(--dark);
+}
+// Display

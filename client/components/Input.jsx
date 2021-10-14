@@ -18,10 +18,11 @@ const Input = ({city, setCity, setAllData, allData}) => {
 	  })
 	}
 
-	 // Updates input state with text entered into search box
+	// Updates input state with text entered into search box
     const handleChange = (e) => {
       setCity(e.target.value)
     }
+
     // Handles form submit
     const handleSubmit = (e) => {
       e.preventDefault()
@@ -29,13 +30,13 @@ const Input = ({city, setCity, setAllData, allData}) => {
     }
 
 	return(
-		<div className='search-container'>
-			<div className='search-header-container'>
-			<h1 className='search-header'>Weather Forcast</h1>
+		<div className='input-container'>
+			<div className='input-header-container'>
+				<h1 className='input-header'>Weather <strong>Forcast</strong></h1>
 			</div>
-			<form onSubmit={(e) => {handleSubmit(e)}} className='search-form'>
-				<input type="text" className='search' placeholder='Enter city here...' onChange={(e) => {handleChange(e)}}/>
-				<button className='btn-search' onClick={getWeather}>Search</button>
+			<form onSubmit={(e) => {handleSubmit(e)}} className='input-form'>
+				<input type="text" className='input-input' placeholder='Enter city here...' onChange={(e) => {handleChange(e)}}/>
+				<button className='btn-input' onClick={getWeather}>Search</button>
 			</form>
 		</div>
 	)

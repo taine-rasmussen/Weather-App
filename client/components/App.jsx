@@ -13,10 +13,10 @@ function App () {
   return (
     <>
       <div className='app'>
-        <div>
+        <div className='input-container'>
           <Input city={city} setCity={setCity} setAllData={setAllData} allData={allData}/>  
         </div>
-        <div>
+        <div className='display-container'>
           <Display allData={allData}/>
         </div>
       </div>
