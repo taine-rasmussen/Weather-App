@@ -1,0 +1,83 @@
+:root {
+  --light: #2a3441;
+  --dark: #14191f;
+  --header: #fffde4;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light);
+  z-index: 10;
+}
+
+h1 {
+  color: var(--header);
+  font-size: 3.5em;
+}
+
+input {
+  background-color: var(--light);
+  color: var(--header);
+  border: none;
+  appearance: none;
+  font-size: 1.2rem;
+}
+
+button {
+  color: var(--header);
+  border-radius: 10px;
+  font-weight: 310;
+  appearance: none;
+  font-size: 1.1rem;
+  background-color: var(--light);
+}
+
+button:hover {
+  border: 2px solid var(--header);
+  transform: scale(0.9);
+}
+
+// App
+
+// App
+// Input
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+// Input
+// Display
+.display-container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  flex-direction: row;
+  z-index: 10;
+}
+
+.display-left-section {
+  width: 100%;
+  max-width: 200px;
+  z-index: 10;
+  height: 20%;
+}
+
+.display-right-section {
+}
+
+.left-bg-img {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+// Display
