@@ -13,8 +13,9 @@ button:focus {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--light);
-  z-index: 10;
+  z-index: 9999;
 }
 
 h1 {
@@ -59,25 +60,62 @@ button:hover {
 // Display
 .display-container {
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
   flex-direction: row;
   z-index: 10;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 800px;
 }
 
 .display-left-section {
   width: 100%;
   max-width: 200px;
   z-index: 10;
-  height: 20%;
-}
-
-.display-right-section {
+  height: 100%;
+  min-height: 100px;
 }
 
 .left-bg-img {
-  z-index: 0;
+  z-index: 1;
   height: 100%;
   width: 100%;
+  border: 4px solid var(--dark);
+  border-radius: 30px;
 }
+
+.display-city {
+  z-index: 10;
+  margin-top: -2rem;
+  margin-left: 1.5rem;
+}
+
+.display-right-section {
+  margin-left: 1rem;
+  display: flex;
+  width: 400px;
+  height: 100%;
+  min-height: 325px;
+  background-color: var(--dark);
+  border-radius: 20px;
+}
+
+.display-right-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.display-title {
+  color: var(--header);
+  font-size: 1rem;
+}
+
+.display-info {
+  font-size: 0.9rem;
+  color: var(--header);
+}
+
 // Display
