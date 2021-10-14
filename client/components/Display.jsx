@@ -7,7 +7,7 @@ const Display = ({allData}) => {
 			{allData.name ? 
 				<div className="display-container">
 					<div className="display-left-section">
-						<h2>{}</h2>
+						<h2>{allData.weather[0].description}</h2>
 					</div>
 					<div className="display-right-section"> 
 						<h3>{allData.name}, {allData.sys.country}</h3>
