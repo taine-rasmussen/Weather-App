@@ -13,13 +13,19 @@ button:focus {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--light);
-  z-index: 10;
+  z-index: 9999;
 }
 
 h1 {
   color: var(--header);
   font-size: 3.5em;
+}
+
+h3 {
+  z-index: 9999;
+  color: var(--header);
 }
 
 input {
@@ -59,25 +65,44 @@ button:hover {
 // Display
 .display-container {
   display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
   flex-direction: row;
   z-index: 10;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .display-left-section {
   width: 100%;
   max-width: 200px;
   z-index: 10;
-  height: 20%;
-}
-
-.display-right-section {
+  height: 100%;
+  min-height: 100px;
 }
 
 .left-bg-img {
-  z-index: 0;
+  z-index: 1;
   height: 100%;
   width: 100%;
+  border: 4px solid var(--dark);
+  border-radius: 30px;
 }
+
+.display-city {
+  z-index: 10;
+  margin-top: -2rem;
+  margin-left: 1.5rem;
+}
+
+.display-right-section {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  z-index: 8888;
+  height: 100%;
+  min-height: 300px;
+  background-color: var(--dark);
+  border-radius: 20px;
+}
+
 // Display
