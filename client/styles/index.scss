@@ -45,6 +45,11 @@ button:hover {
   transform: scale(0.9);
 }
 
+ul {
+  font-size: 1.2rem;
+  color: var(--header);
+}
+
 // App
 
 // App
@@ -93,7 +98,6 @@ button:hover {
 
 .display-right-section {
   margin-left: 1rem;
-  display: flex;
   width: 400px;
   height: 100%;
   min-height: 325px;
@@ -108,13 +112,18 @@ button:hover {
   justify-content: center;
 }
 
+.display-right-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .display-title {
   color: var(--header);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .display-info {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--header);
 }
 

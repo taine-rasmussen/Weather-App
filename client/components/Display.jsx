@@ -23,7 +23,6 @@ const Display = ({allData}) => {
 								<li>Temp: {allData.main.temp}</li>
 								<li>Humidity: {allData.main.humidity}</li>
 								<li>Wind: {allData.wind.speed}</li>
-								<li></li>
 							</ul>
 						</div>
 
