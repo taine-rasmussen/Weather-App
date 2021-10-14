@@ -20,9 +20,9 @@ const Display = ({allData}) => {
 						</div>
 						<div className="display-right-content">
 							<ul>
-								<li>Temp: {allData.main.temp}</li>
+								<li>Temp: {allData.main.temp} deg</li>
 								<li>Humidity: {allData.main.humidity}</li>
-								<li>Wind: {allData.wind.speed}</li>
+								<li>Wind: {allData.wind.speed} km/s</li>
 							</ul>
 						</div>
 
