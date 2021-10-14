@@ -12,11 +12,11 @@ const Display = ({allData}) => {
 				<div className="display-container">
 					<div className="display-left-section">
 						<img src={mtnsDay} className="left-bg-img"/>
-						<h3 className='display-city'>{allData.name},  {allData.sys.country}</h3>
+						<h3 className='display-city display-title'>{allData.name},  {allData.sys.country}</h3>
 					</div>
 					<div className="display-right-section"> 
 						<div className="display-right-header">
-							<h2>Current conditions: <h3>{allData.weather[0].description}</h3> </h2>
+							<h3 className='display-title'>Current conditions: {allData.weather[0].description}</h3>
 						</div>
 						<div className="display-right-content">
 
