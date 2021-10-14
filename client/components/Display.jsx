@@ -19,7 +19,12 @@ const Display = ({allData}) => {
 							<h3 className='display-title'>Current conditions: {allData.weather[0].description}</h3>
 						</div>
 						<div className="display-right-content">
-
+							<ul>
+								<li>Temp: {allData.main.temp}</li>
+								<li>Humidity: {allData.main.humidity}</li>
+								<li>Wind: {allData.wind.speed}</li>
+								<li></li>
+							</ul>
 						</div>
 
 					</div>
